@@ -62,11 +62,4 @@ Make sure the `DefaultConnection` string in `appsettings.json` points to your My
 - If you want to change the DB provider (e.g., SQL Server), update `Program.cs` and connection configuration.
 - Files to inspect for behavior details: `Pages/Students.cshtml.cs`, `Pages/CreateStudent.cshtml.cs`, `Pages/DeleteStudent.cshtml.cs`.
 
-If you want, I can:
-- Open the Razor `.cshtml` views and add example snippet screenshots or sample HTML forms.
-- Add a small section with curl/Postman examples for the POST delete flow.
-
----
-
-File: `README.md`
 
