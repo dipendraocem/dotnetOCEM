@@ -1,0 +1,13 @@
+@page
+
+@model CreateStudentModel
+@{
+    ViewData["Title"] = "Create Student";
+}
+<h2>Create Student</h2>
+<form method="post">
+    <input type="text" asp-for="Student.Name" class="form-control" placeholder="Enter Name"/>
+    <input type="email" asp-for="Student.Email" class="form-control" placeholder="Enter Email"/>
+    <button type="submit" class="btn btn-primary">Create</button>
+    <a asp-page="Students" class="btn btn-secondary">Cancel</a>
+</form>

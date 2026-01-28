@@ -1,0 +1,27 @@
+@page
+@model StudentsModel
+@{
+    ViewData["Title"] = "Students";
+}
+<h3 class="text-center">Students</h3>
+<a asp-page="/CreateStudent" class="btn btn-success mb-3">Add New Student</a>
+<table class="table table-bordered">
+    <tr>
+        <th>Id</th>
+        <th>Student Name</th>
+        <th>Email</th>
+        <th>Actions</th>
+    </tr>
+    @foreach (var student in Model.Students)
+    {
+        <tr>
+            <td>@student.Id</td>
+            <td>@student.Name</td>
+            <td>@student.Email</td>
+            <td>
+                <a asp-page="/EditStudent" asp-route-id="@student.Id" class="btn btn-primary btn-sm">Edit</a>
+                <a asp-page="/DeleteStudent" asp-route-id="@student.Id" class="btn btn-danger btn-sm">Delete</a>
+            </td>
+        </tr>
+    }       
+</table>
