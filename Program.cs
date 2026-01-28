@@ -8,6 +8,11 @@ builder.Services.AddRazorPages();
 builder.Services.AddDbContext<AppDbContext>(options =>
     options.UseMySql(builder.Configuration.GetConnectionString("DefaultConnection"),
     new MySqlServerVersion(new Version(8, 0, 26))));
+//use this for SQL Server
+/*
+builder.Services.Configure<AppDbContext>(options =>
+    options.UseSqlServer(builder.Configuration.GetConnectionString("SqlServerConnection")));
+*/
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
