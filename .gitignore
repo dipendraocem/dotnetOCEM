@@ -1,0 +1,17 @@
+# macOS
+.DS_Store
+
+# Visual Studio / .NET
+bin/
+obj/
+*.user
+*.suo
+*.vs/
+.vscode/
+*.ncrunch*
+*.localhistory/
+*.ide/
+*.resharper/
+_ReSharper*/
+*.DotSettings.user
+*.sln.docstates
